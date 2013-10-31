@@ -19,6 +19,10 @@
 		8D808ABA18222A54004086BB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D808AA218222A54004086BB /* UIKit.framework */; };
 		8D808AC218222A54004086BB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8D808AC018222A54004086BB /* InfoPlist.strings */; };
 		8D808AC418222A54004086BB /* toDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D808AC318222A54004086BB /* toDoListTests.m */; };
+		8D808ACE18222B4C004086BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D808ACD18222B4C004086BB /* Main.storyboard */; };
+		8D808AD1182230FA004086BB /* FKAAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D808AD0182230FA004086BB /* FKAAddToDoItemViewController.m */; };
+		8D808AD41822318A004086BB /* FKAToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D808AD31822318A004086BB /* FKAToDoListViewController.m */; };
+		8D808AD7182232A8004086BB /* FKAToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D808AD6182232A8004086BB /* FKAToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		8D808ABF18222A54004086BB /* toDoListTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "toDoListTests-Info.plist"; sourceTree = "<group>"; };
 		8D808AC118222A54004086BB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8D808AC318222A54004086BB /* toDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toDoListTests.m; sourceTree = "<group>"; };
+		8D808ACD18222B4C004086BB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		8D808ACF182230FA004086BB /* FKAAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKAAddToDoItemViewController.h; sourceTree = "<group>"; };
+		8D808AD0182230FA004086BB /* FKAAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKAAddToDoItemViewController.m; sourceTree = "<group>"; };
+		8D808AD21822318A004086BB /* FKAToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKAToDoListViewController.h; sourceTree = "<group>"; };
+		8D808AD31822318A004086BB /* FKAToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKAToDoListViewController.m; sourceTree = "<group>"; };
+		8D808AD5182232A8004086BB /* FKAToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKAToDoItem.h; sourceTree = "<group>"; };
+		8D808AD6182232A8004086BB /* FKAToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKAToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,10 @@
 		8D808A9218222A54004086BB = {
 			isa = PBXGroup;
 			children = (
+				8D808AD5182232A8004086BB /* FKAToDoItem.h */,
+				8D808AD6182232A8004086BB /* FKAToDoItem.m */,
+				8D808ACF182230FA004086BB /* FKAAddToDoItemViewController.h */,
+				8D808AD0182230FA004086BB /* FKAAddToDoItemViewController.m */,
 				8D808AA418222A54004086BB /* toDoList */,
 				8D808ABD18222A54004086BB /* toDoListTests */,
 				8D808A9D18222A54004086BB /* Frameworks */,
@@ -109,6 +124,9 @@
 			children = (
 				8D808AAD18222A54004086BB /* FKAAppDelegate.h */,
 				8D808AAE18222A54004086BB /* FKAAppDelegate.m */,
+				8D808ACD18222B4C004086BB /* Main.storyboard */,
+				8D808AD21822318A004086BB /* FKAToDoListViewController.h */,
+				8D808AD31822318A004086BB /* FKAToDoListViewController.m */,
 				8D808AB018222A54004086BB /* Images.xcassets */,
 				8D808AA518222A54004086BB /* Supporting Files */,
 			);
@@ -220,6 +238,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D808ACE18222B4C004086BB /* Main.storyboard in Resources */,
 				8D808AA918222A54004086BB /* InfoPlist.strings in Resources */,
 				8D808AB118222A54004086BB /* Images.xcassets in Resources */,
 			);
@@ -241,7 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D808AAB18222A54004086BB /* main.m in Sources */,
+				8D808AD41822318A004086BB /* FKAToDoListViewController.m in Sources */,
+				8D808AD1182230FA004086BB /* FKAAddToDoItemViewController.m in Sources */,
 				8D808AAF18222A54004086BB /* FKAAppDelegate.m in Sources */,
+				8D808AD7182232A8004086BB /* FKAToDoItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
